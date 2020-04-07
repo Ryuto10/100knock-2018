@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<header>
+  <h1>Ranking Top 10</h1>
+  <h2>{{select_type}} &nbsp; is &nbsp; {{ query }}</h2>
+</header>
+  {{ data_frame|safe }}
+{% endblock %}
